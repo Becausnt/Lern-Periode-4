@@ -13,7 +13,7 @@ V. H. IM23w
 
 ## 20.2.2024
 
-✍️ Heute habe ich... (50-100 Wörter)
+Heute habe ich mich dafür entschieden ein Projekt mit einem Discord-Bot zu machen. Ich bin einem Tutorial gefolgt und habe nach einige Probleme dank unterschiedlichen Versionen von libraries gehabt. Diese wurden mit einiger Hilfe aber gelöst. Nun habe ich ein Problem, da mein Bot erst den Inhalt von Nachrichten nicht erhielt, und nun gar keine Nachrichten mehr erhält.
 
 ## 27.2.2024
 
