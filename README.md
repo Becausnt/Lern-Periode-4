@@ -1,15 +1,15 @@
 # Lern-Periode 4
-
-Max Muster
+V. H. IM23w
 
 20.2 bis 2.4.2024
 
 ## Grob-Planung
 
-1. Wo stehen Sie mit Ihren Noten? In welchen Modulen waren Sie besonders stark; in welchen sind die ungenügend? Welche davon sind besonders wichtig?
-2. Was hatten Sie sich am Ende von LP2 vorgenommen? Was war Ihr VBV? Wie könnten Sie diesen besonders gut üben?
-3. **Neu**: Was möchten Sie Neues lernen?
-4. Was wäre ein geeignetes Projekt für diese LP4?
+1. Mit meinen Noten bin ich momentan zufrieden und als besonders wichtig habe ich Modul 431 empfunden da es uns die Grundlagen des praktischen Prorgammierens beigebracht hat.
+2. Mein letzter VBV war folgender:
+   > Manchmal während dem Programmieren, inzwischen weniger als am Anfang, wenn ich über ein Problem nachdenke schweife ich mit den Gedanken ab und starre Löcher in meinen Monitor. Dies dauert aber meist nur kurze Zeit an, ist also nicht so ein grosses Problem.
+4. **Neu**: Ich möchte einen discord-bot schreiben, welcher mit dem Benutzer TicTacToe oder so etwas spielt. (API)
+5. Als ein geeignetes Projekt empfinde ich den obigen Vorschlag
 
 ## 20.2.2024
 
