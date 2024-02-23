@@ -17,9 +17,9 @@ Heute habe ich mich dafür entschieden ein Projekt mit einem Discord-Bot zu mach
 
 ## 27.2.2024
 
-- [ ] Erstes Arbeitspaket
-- [ ] ...
-- [ ] Viertes AP
+- [ ] Herausfinden wie der Bot Daten speichern kann und so mit dem Benutzer spiele spielen kann
+- [ ] TicTacToe-Spielfeld bauen
+- [ ] TicTacToe spiel funktionalität bauen 
 
 | Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
 | --------------- | -------------------- | -------------- | -------------- | -------- |
