@@ -40,7 +40,8 @@ namespace GameBot
 
             var cmd = new commands();
 
-            string token = "MTIwOTQwMDIxOTE0MjMyNDIyNA.GpK6iV.RnrkVK9J7GK1V1Ax0jf_JSXIBuYI-9pWdnxNYU";
+            string token = "MTIwOTQwMDIxOTE0MjMyNDIyNA.GpK6iV.RnrkVK9J7GK1V1Ax0jf_JSXIBuYI-9pWdnxNYU"; // Real token, but reset instantly after uploading
+            
             _client.Log += _client_Log;
             _client.ButtonExecuted += MyButtonHandler;
             _client.SelectMenuExecuted += cmd.MenuHandler;
