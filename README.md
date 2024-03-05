@@ -24,7 +24,7 @@ Heute habe ich mich dazu entsschieden an meinem SQL-Auftrag zu arbeiten, da ich 
 ## 27.2.2024
 
 - [ ] Herausfinden wie der Bot Daten speichern kann und so mit dem Benutzer spiele spielen kann
-- [ ] TicTacToe-Spielfeld bauen
+- [x] TicTacToe-Spielfeld bauen
 - [ ] TicTacToe spiel funktionalität bauen
 - [ ] 1 Spiel pro benutzer
 
