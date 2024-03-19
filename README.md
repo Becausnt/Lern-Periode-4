@@ -23,7 +23,7 @@ Heute habe ich mich dazu entsschieden an meinem SQL-Auftrag zu arbeiten, da ich 
 ☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen, und in der Spalte **Erfüllt?** einzutragen, ob Ihr Code die Test-Fälle erfüllt
 ## 27.2.2024
 
-- [ ] Herausfinden wie der Bot Daten speichern kann und so mit dem Benutzer spiele spielen kann
+- [x] Herausfinden wie der Bot Daten speichern kann und so mit dem Benutzer spiele spielen kann
 - [x] TicTacToe-Spielfeld bauen
 - [ ] TicTacToe spiel funktionalität bauen
 - [ ] 1 Spiel pro benutzer
@@ -44,3 +44,50 @@ Heute habe ich mich dazu entsschieden an meinem SQL-Auftrag zu arbeiten, da ich 
 ## Reflexion
 
 Formen Sie Ihre Zusammenfassungen in Hinblick auf Ihren VBV zu einem zusammenhängenden Text von 100 bis 200 Wörtern (wieder mit Angabe in Klammern).
+## 19.2.2024
+
+- [x] Im Modul M187 Auftrag 0710 fertig machen.
+- [x] M187 Doku updaten
+- [ ] TicTacToe spiel funktionalität bauen
+- [ ] Score tracker
+
+| Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
+| --------------- | -------------------- | -------------- | -------------- | -------- |
+| 1               | Bot gestartet, benutzer auf discord. | /button | Bot: Here's a button {Discord button} | Ja |
+| 2               | Bot gestartet, benutzer auf discord. | /ping   | Bot: Pong! | Ja |
+| 3               | Bot gestartet, benutzer auf discord /tictactoe eingegeben. | dropdown 1 | Bot: {TicTacToe Spielfeld}{Drop down list mit Zugmöglichkeiten} (Feld 1 = X) | Ja |
+
+
+✍️ Heute habe ich... (50-100 Wörter)
+Heute habe ich M187 Aufträge fertiggemacht, versucht eine Gewinnüberprüfung zu machen, das hat aber nicht so ganz geklappt. Das hier sollte Auf gewinn in einer Reihe überprüfen, aber vermutlich irgendwie werden die Fälle  falsch überprüft. Zudem habe ich an meiner Dokumentation fürs Modul 187 gearbeitet.
+```C#
+ switch (component.Data.CustomId)
+ {
+     case "menu1":
+
+         int selectedField = Convert.ToInt32(component.Data.Values.First()) -1;
+         if (!(playingField[selectedField] == 'X' || playingField[selectedField] == 'O'))
+         {
+             playingField[selectedField] = playerTurn;
+         }   
+         await component.RespondAsync($" {playingField[0]}|{playingField[1]}|{playingField[2]}\n{playingField[3]}|{playingField[4]}|{playingField[5]}\n{playingField[6]}|{playingField[7]}|{playingField[8]}", components: components.Build());
+
+         var chnl = _client.GetChannel(1209402857380380683) as IMessageChannel;
+         await chnl.SendMessageAsync($"Player {playerTurn} has won.");
+         //await component.RespondAsync($"You selected {component.Data.Values.First()}"); // .First() ist das momentan ausgewählte
+
+
+         // check rows
+         for (int i = 0; i < 3; i++ )
+         {
+             if (playingField[i*3 + 1] == playerTurn && playingField[i*3 + 2] == playerTurn && playingField[i*3 + 3] == playerTurn)
+             {
+                
+             }
+         }
+
+         playerTurn = playerTurn == 'X' ? 'O' : 'X'; // look up 'ternary operator'
+
+         break;
+ }
+```
