@@ -89,18 +89,34 @@ Heute habe ich M187 Aufträge fertiggemacht, versucht eine Gewinnüberprüfung z
          break;
  }
 ```
-## 27.2.2024
+## 26.2.2024
 
-- [ ] /remindme hinzufügen
-- [ ] /coinflip hinzufügen
+- [x] /remindme hinzufügen
+- [x] /coinflip hinzufügen
 - [ ] TicTacToe spiel funktionalität bauen
-- [ ] Bugfixes
+- [x] Bugfixes
+
+| Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
+| --------------- | -------------------- | -------------- | -------------- | -------- |
+| 1               | Bot gestartet, benutzer auf discord.  | /coinflip | The coin was Heads/Tails | Ja |
+| 2               | Bot gestartet, benutzer auf discord.  | /remindme 5 "hello There" | (nach 5 sekunden) @user dont forget: hello there | Ja | 
+| 3               | Bot gestartet, benutzer auf discord, tictactoe spiel 1 zug vom Gewinn entfernt  | /tictactoe {gewinnendes feld} | Player X/O has won. | Nein |
+
+Heute habe ich zwei neue Befehle hinzugefügt. Für /remindme mit habe ich `await Task.Delay();` benutzt. Hierbei habe ich aber noch das Problem, das das die Befehlseingabe zu blockieren scheint. Obwohl discord.net dies eigentlich automatisch handeln soll. Vielleicht ist dies auch ein konfiguration- oder Verständnissfehler. Zudem habe ich bei /coinflip Random benutzt. Dies funktioniert gut, aber ich musste herausfinden, dass random.next(0,1) werte grösser oder gleich 0 nehmen kann, aber nicht bis und *mit* 1, sondern nur bis 1. Auch habe ich ein paar kleinere Verschönerungen hinzugefügt. Ich habe immer noch starke schwierigkeiten mit dem TicTacToe spiel, da ich das gefühl habe, das ich dafür Variabeln haben müsste, auf welche commands.cs und Program.cs zugreifen können.
+
+
+## nächstes mal
+
+- [ ] Verschönerungen
+- [ ] Falls genug Zeit nach TicTacToe: Threading für /remindme
+- [ ] TicTacToe spiel funktionalität bauen
+
 
 | Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
 | --------------- | -------------------- | -------------- | -------------- | -------- |
 | 1               | Bot gestartet, benutzer auf discord.  |  |  |  |
-| 2               | Bot gestartet, benutzer auf discord.  |  |  |  | 
-| 3               | Bot gestartet, benutzer auf discord.  |  |  |  |
+| 2               | Bot gestartet, benutzer auf discord.  |  |  |  |
+| 3               | Bot gestartet, benutzer auf discord   |  |  |  |
 
+Zusammenfassung
 
-✍️ Heute habe ich... (50-100 Wörter)
