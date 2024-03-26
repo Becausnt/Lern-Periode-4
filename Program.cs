@@ -17,7 +17,7 @@ namespace GameBot
         static void Main(string[] args) => new Program().RunBotAsync().GetAwaiter().GetResult();
 
 
-        DiscordSocketClient _client; // das Problem war, das dies als private definiert wurde.
+        public DiscordSocketClient _client; // das Problem war, das dies als private definiert wurde.
         private CommandService _commands;
         private IServiceProvider _services;
 
@@ -40,8 +40,7 @@ namespace GameBot
 
             var cmd = new commands();
 
-            string token = "MTIwOTQwMDIxOTE0MjMyNDIyNA.GpK6iV.RnrkVK9J7GK1V1Ax0jf_JSXIBuYI-9pWdnxNYU"; // Real token, but reset instantly after uploading
-            
+            string token = "MTIwOTQwMDIxOTE0MjMyNDIyNA.GRkIhB.ZV3Qx4J_I1vvxrf0mTvj4cxkISKkoO6olw5Be8";
             _client.Log += _client_Log;
             _client.ButtonExecuted += MyButtonHandler;
             _client.SelectMenuExecuted += cmd.MenuHandler;
