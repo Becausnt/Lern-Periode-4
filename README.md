@@ -37,8 +37,6 @@ Heute habe ich mich dazu entsschieden an meinem SQL-Auftrag zu arbeiten, da ich 
 Heute habe ich mich dazu entsschieden an meinem SQL-Auftrag zu arbeiten, da ich daran noch einiges machen muss und wir für unser Projekt noch lange Zeit haben. Ich verschiebe die Arbeitspakete, welche ich heute gemacht haben sollte auf nächstes mal. zu meinen Arbeitspaketen habe ich noch folgendes zu sagen: Auch wenn TicTacToe Spiel funktionalität nich sehr schwierig scheinen mag, finde ich es doch noch kompliziert, da das Programm, welches Befehle Registriert und darauf registriert in einer Datei ist, das TicTacToe Spiel selbst jedoch in einer anderen. Zudem muss ich dafür sorgen das nur der Benutzer der den Befehl ausgeführt hat das Spiel spielen kann.
 ✍️ Heute habe ich... (50-100 Wörter)
 
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen, und in der Spalte **Erfüllt?** einzutragen, ob Ihr Code die Test-Fälle erfüllt
-
 
 
 ## Reflexion
@@ -91,3 +89,18 @@ Heute habe ich M187 Aufträge fertiggemacht, versucht eine Gewinnüberprüfung z
          break;
  }
 ```
+## 27.2.2024
+
+- [ ] /remindme hinzufügen
+- [ ] /coinflip hinzufügen
+- [ ] TicTacToe spiel funktionalität bauen
+- [ ] Bugfixes
+
+| Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
+| --------------- | -------------------- | -------------- | -------------- | -------- |
+| 1               | Bot gestartet, benutzer auf discord.  |  |  |  |
+| 2               | Bot gestartet, benutzer auf discord.  |  |  |  | 
+| 3               | Bot gestartet, benutzer auf discord.  |  |  |  |
+
+
+✍️ Heute habe ich... (50-100 Wörter)
